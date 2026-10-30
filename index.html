@@ -1,0 +1,787 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome Back</h1>
+        <p>Please enter your details to log in.</p>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+
+             < Username Field -->
+            <!-- <label for="username">Username:</label>
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                required
+            >
+
+            <br><br>
+
+            < Password Field -->
+            <!-- <label for="password">Password:</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+            >
+
+            <br><br>
+
+            < Remember Me Checkbox >
+            <input
+                type="checkbox"
+                id="remember"
+                name="remember"
+            >
+            <label for="remember">Remember Me</label>
+
+            <br><br>
+
+            < Login Button >
+            <button type="submit">Login</button>
+
+            <br><br>
+
+            < Additional Links >
+            <a href="#">Forgot Password?</a>
+
+            <p>
+                Don't have an account?
+                <a href="#">Register here</a>
+            </p>
+
+        </form>
+    </main>
+
+    <footer>
+        <p> 2026 My Login Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html> --> 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign in to your account">
+  <title>Sign In | Your Company</title>
+</head>
+<body>
+
+  <header>
+    <h1>Your Company</h1>
+  </header>
+
+  <main>
+    <section aria-labelledby="login-heading">
+      <h2 id="login-heading">Sign in to your account</h2>
+      <p>Welcome back. Please enter your credentials to continue.</p>
+
+      <form action="/login" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Account Login</legend>
+
+          <p>
+            <label for="email">Email address</label><br>
+            <input type="email" id="email" name="email"
+                   placeholder="name@example.com"
+                   autocomplete="username" required autofocus>
+          </p>
+
+          <p>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password"
+                   placeholder="Enter your password"
+                   autocomplete="current-password" minlength="8" required>
+          </p>
+
+          <p>
+            <input type="checkbox" id="remember" name="remember" value="yes">
+            <label for="remember">Remember me</label>
+          </p>
+
+          <p>
+            <button type="submit">Sign In</button>
+          </p>
+        </fieldset>
+      </form>
+
+      <nav aria-label="Account help">
+        <p><a href="/forgot-password">Forgot your password?</a></p>
+        <p>Don't have an account? <a href="/register">Create one</a></p>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <p>
+      <a href="/privacy">Privacy Policy</a> |
+      <a href="/terms">Terms of Service</a> |
+      <a href="/support">Help &amp; Support</a>
+    </p>
+    <p><small>&copy; 2026 Your Company. All rights reserved.</small></p>
+  </footer>
+
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Login Page</title>
+
+    <style>
+        /* General Page Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Login Container */
+        .login-container {
+            width: 350px;
+            background-color: #ffffff;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Heading */
+        h1 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        /* Form Labels */
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #334155;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* Input Fields */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        input:focus {
+            outline: 2px solid #93c5fd;
+            border-color: #2563eb;
+        }
+
+        /* Forgot Password */
+        .forgot-password {
+            text-align: right;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+
+        .forgot-password a {
+            color: #2563eb;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        /* Login Button */
+        button {
+            width: 100%;
+            padding: 13px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Registration Link */
+        .register {
+            text-align: center;
+            margin-top: 25px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .register a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .register a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .login-container {
+                width: calc(100% - 60px);
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h1>Welcome Back</h1>
+
+        <p class="subtitle">
+            Please log in to your account
+        </p>
+
+        <form action="#" method="post">
+
+            <label for="username">Username</label>
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                autocomplete="username"
+                required
+            >
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                autocomplete="current-password"
+                required
+            >
+
+            <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p class="register">
+            Don't have an account?
+            <a href="#">Sign Up</a>
+        </p>
+
+    </div>
+
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amazon Shopping Page</title>
+
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #e3e6e6;
+        }
+
+        /* First Header */
+        .main-header {
+            background-color: #131921;
+            color: white;
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 15px;
+            padding: 10px 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Amazon Logo */
+        .logo {
+            color: white;
+            font-size: 29px;
+            font-weight: bold;
+            text-decoration: none;
+            white-space: nowrap;
+            padding: 5px;
+        }
+
+        .logo span {
+            color: #ff9900;
+        }
+
+        /* Search Bar */
+        .search-bar {
+            display: flex;
+            flex: 1;
+            min-width: 200px;
+            max-width: 650px;
+            height: 42px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .search-bar input {
+            flex: 1;
+            min-width: 0;
+            padding: 10px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .search-bar button {
+            width: 50px;
+            border: none;
+            background-color: #febd69;
+            font-size: 21px;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #f3a847;
+        }
+
+        /* Header Navigation Items */
+        .header-item {
+            color: white;
+            text-decoration: none;
+            padding: 7px;
+            white-space: nowrap;
+            border: 1px solid transparent;
+        }
+
+        .header-item:hover {
+            border: 1px solid white;
+        }
+
+        .header-item small {
+            display: block;
+            font-size: 12px;
+        }
+
+        .header-item strong {
+            display: block;
+            font-size: 14px;
+        }
+
+        /* Cart */
+        .cart {
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .cart-icon {
+            font-size: 28px;
+            vertical-align: middle;
+        }
+
+        /* Second Navigation Bar */
+        .sub-header {
+            background-color: #232f3e;
+            color: white;
+            min-height: 45px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 15px;
+            flex-wrap: wrap;
+        }
+
+        .sub-header a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 10px;
+            border: 1px solid transparent;
+        }
+
+        .sub-header a:hover {
+            border: 1px solid white;
+        }
+
+        .all-menu {
+            font-weight: bold;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(
+                to right,
+                #dcecf7,
+                #ffffff,
+                #f9e7d0
+            );
+            min-height: 260px;
+            padding: 60px 30px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: #131921;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #333333;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .shop-button {
+            display: inline-block;
+            background-color: #ffd814;
+            color: #111111;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .shop-button:hover {
+            background-color: #f7ca00;
+        }
+
+        /* Product Cards */
+        .products-section {
+            padding: 25px;
+        }
+
+        .products-section h2 {
+            color: #131921;
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            padding: 25px 15px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+        }
+
+        .product-icon {
+            font-size: 65px;
+            margin: 15px 0;
+        }
+
+        .product-card h3 {
+            color: #131921;
+            margin-bottom: 10px;
+        }
+
+        .product-card p {
+            color: #555555;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .product-card a {
+            color: #007185;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .product-card a:hover {
+            color: #c7511f;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #131921;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .products {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .main-header {
+                justify-content: flex-start;
+            }
+
+            .search-bar {
+                order: 5;
+                flex-basis: 100%;
+                max-width: none;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 27px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .sub-header {
+                gap: 0;
+            }
+
+            .sub-header a {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    < Main Header >
+    <header class="main-header">
+
+        < Logo >
+        <a href="#" class="logo">
+            amazon<span>.in</span>
+        </a>
+
+        < Search Bar >
+        <form class="search-bar" action="#" method="get">
+            <input
+                type="search"
+                name="search"
+                placeholder="Search Amazon.in"
+                aria-label="Search products"
+            >
+            <button type="submit" aria-label="Search">&#128269</button>
+        </form>
+
+        < Sign In >
+        <a href="#" class="header-item">
+            <small>Hello, sign in</small>
+            <strong>Account</strong>
+        </a>
+
+        < Account and Lists >
+        <a href="#" class="header-item">
+            <small>Account &amp</small>
+            <strong>Lists</strong>
+        </a>
+
+        < Returns and Orders >
+        <a href="#" class="header-item">
+            <small>Returns</small>
+            <strong>&amp Orders</strong>
+        </a>
+
+        <Cart>
+        <a href="#" class="header-item cart">
+            <span class="cart-icon">&#128722</span>
+            Cart
+        </a>
+
+    </header>
+
+    <Second Navigation Bar >
+    <nav class="sub-header">
+
+        <a href="#" class="all-menu">&#9776 All</a>
+
+        <a href="#">Amazon Originals</a>
+
+        <a href="#">Prime Video</a>
+
+        <a href="#">Coupons</a>
+
+        <a href="#">Customer Service</a>
+
+        <a href="#">Today's Deals</a>
+
+        <a href="#">Registry</a>
+
+        <a href="#">Gift Cards</a>
+
+        <a href="#">Sell</a>
+
+    </nav>
+
+    < Main Banner >
+    <section class="hero">
+
+        <h1>Welcome to Online Shopping</h1>
+
+        <p>
+            Discover amazing products, great deals,
+            and your favorite brands in one place.
+        </p>
+
+        <a href="#products" class="shop-button">
+            Start Shopping
+        </a>
+
+    </section>
+
+    < Product Categories >
+    <section class="products-section" id="products">
+
+        <h2>Explore Our Categories</h2>
+
+        <div class="products">
+
+            < Card 1>
+            <div class="product-card">
+
+                <h3>Electronics</h3>
+
+                <div class="product-icon">&#128187</div>
+
+                <p>
+                    Explore laptops, computers,
+                    accessories, and more.
+                </p>
+
+                <a href="#">Explore Electronics</a>
+
+            </div>
+
+            < Card 2 >
+            <div class="product-card">
+
+                <h3>Fashion</h3>
+
+                <div class="product-icon">&#128085</div>
+
+                <p>
+                    Discover clothing, footwear,
+                    and the latest styles.
+                </p>
+
+                <a href="#">Explore Fashion</a>
+
+            </div>
+
+            < Card 3 >
+            <div class="product-card">
+
+                <h3>Home &amp Kitchen</h3>
+
+                <div class="product-icon">&#127968</div>
+
+                <p>
+                    Find useful products for
+                    your home and kitchen.
+                </p>
+
+                <a href="#">Explore Home Products</a>
+
+            </div>
+
+            < Card 4 >
+            <div class="product-card">
+
+                <h3>Books</h3>
+
+                <div class="product-icon">&#128218</div>
+
+                <p>
+                    Discover educational books,
+                    novels, and study materials.
+                </p>
+
+                <a href="#">Explore Books</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    < Footer >
+    <footer>
+
+        <p>
+            &copy 2026 Online Shopping Demo.
+            Created using HTML and CSS.
+        </p>
+
+        <p style="margin-top: 10px;">
+            This is a static demonstration webpage.
+        </p>
+
+    </footer>
+
+</body>
+</html> 
